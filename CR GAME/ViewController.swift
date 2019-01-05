@@ -15,6 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
+    
+    @IBAction func startButtonClicked(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toGameVC", sender: nil)
+        
+        
+    }
+    
+    @IBAction func helpButtonClicked(_ sender: Any) {
+        performSegue(withIdentifier: "toHelpVC", sender: nil)
+    }
 }
 
